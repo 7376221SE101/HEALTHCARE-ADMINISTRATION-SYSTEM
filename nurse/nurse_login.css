@@ -1,0 +1,123 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:#0A61C7; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 1000px;
+    max-width: 90%;
+}
+
+.logo-section {
+    background-color: #d9e9fc;
+    color: #333;
+    padding: 60px 40px;
+    text-align: center;
+    width: 45%;
+}
+
+.logo-section img {
+    max-width: 300px; /* Make logo bigger */
+}
+
+.logo-section h1 {
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.logo-section h2 {
+    font-size: 24px;
+    color: #000; /* Set WELCOME text to black */
+    margin-top: 10px;
+}
+
+.login-form {
+    padding: 60px 50px;
+    width: 55%;
+    background-color: #edf3fd;
+}
+
+.user-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.user-button {
+    background-color: #6ea4e7;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 0 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.user-button.active {
+    background-color: #3b82f6;
+}
+
+.user-button:hover {
+    background-color: #3b82f6;
+}
+
+.login-form h3 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.login-form label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    background-color: #6ea4e7;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #3b82f6;
+}
+

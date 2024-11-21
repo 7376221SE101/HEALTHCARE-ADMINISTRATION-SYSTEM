@@ -1,0 +1,195 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+   
+    line-height: 1.6;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+aside {
+    background-color: #0A61C7;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+aside ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+aside ul li {
+    margin-bottom: 20px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+aside ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* Main Content Area */
+main {
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    border-radius: 10px;
+
+}
+
+/* Name and Number (Top Right) */
+.admin-profile {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    text-align: right;
+}
+
+.admin-profile h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #01070f;
+}
+
+.admin-profile p {
+    font-size: 1rem;
+    color: #0f0101;
+}
+
+/* Centering Create Task Form */
+.main-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Positioning the Greeting in the Top Left */
+.greeting {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.greeting h2 {
+    font-size: 2rem;
+    color: #010407;
+}
+
+/* Create Task Form Container */
+.create-task-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #e3eefb;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+    transition: transform 0.3s ease;
+}
+
+.create-task-container:hover {
+    transform: scale(1.02);
+}
+
+.create-task-container h1 {
+    text-align: center;
+    color: #0A61C7;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #0A61C7;
+    outline: none;
+    background-color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0A61C7;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #084f9e;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .admin-profile {
+        right: 10px;
+        top: 10px;
+    }
+}
